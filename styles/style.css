@@ -291,6 +291,70 @@ p {
 
 /*Начал блок footer*/
 
+.theme_dark {
+  color: white;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
 
+.footer {
+  background-color: #1f1f1f;
+  margin: 0;
+  min-height: 350px;
+  display: flex;
+}
+
+.footer__column {
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 711px;
+  justify-content: space-between;
+}
+
+.logo_place_footer {
+  height: 35px;
+  width: 183px;
+}
+
+.footer__author {
+  margin: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.footer__column-links {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 16px;
+}
+
+.footer__social-icon {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 16px;
+}
+
+.footer__social-icon_icon {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+}
 
 /*Закончил блок footer*/
