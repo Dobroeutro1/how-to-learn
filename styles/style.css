@@ -28,12 +28,12 @@
 }
 
 .logo_place_header {
-  height: 32px;
-  width: 183px;
   display: flex;
   position: absolute;
   top: 30px;
   left: 64px;
+  height: 32px;
+  width: 183px;
 }
 
 .header__title {
@@ -96,6 +96,7 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+  margin: 0;
 }
 
 .two-columns__main-text {
@@ -150,7 +151,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 450px;
+  min-height: 450px;
   width: 1100px;
   margin: 0 auto 100px;
 }
@@ -187,7 +188,7 @@
   height: 790px;
   margin: 0 auto;
   padding-top: 100px;
-  background-image: url(/images/feynman.png);
+  background-image: url(../images/feynman.png);
   background-position: left bottom;
   background-repeat: no-repeat;
   background-color: #f2f2f2;
@@ -230,6 +231,10 @@
   background-color: #1f1f1f;
   position: relative;
   overflow: hidden;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-repeat: no-repeat;
+  background-size: 877px 877px;
+  background-position: top 0px right -210px;
 
 }
 /* и элемента с модификатором вида ключ-значение */
@@ -265,6 +270,7 @@
   height: 877px;
   width: 877px;
   position: absolute;
+  top: 0;
   right: -210px;
   z-index: 1;
 }
@@ -289,9 +295,12 @@
   justify-content: space-between;
 }
 
-.footer__column_content_copyright {
+.footer__column {
   display: flex;
   flex-direction: column;
+}
+
+.footer__column_content_copyright {
   flex-basis: 711px;
   justify-content: space-between;
 }
@@ -308,12 +317,6 @@
   font-weight: normal;
 }
 
-.footer__column_content_info {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
 .footer__column-heading {
   line-height: 30px;
   font-size: 18px;
@@ -321,7 +324,7 @@
   margin: 0;
 }
 
-.footer__column-links {
+.footer__column-link {
   text-decoration: none;
   color: white;
   line-height: 30px;
@@ -329,17 +332,17 @@
   font-weight: normal;
 }
 
+.footer__column-links {
+  padding: 0;
+}
+
 .footer__column-links:first-of-type {
   margin-top: 20px;
+  list-style: none;
 }
 
 .footer__column-links:last-of-type {
   margin-bottom: 16px;
-}
-
-.footer__column_content_social {
-  display: flex;
-  flex-direction: column;
 }
 
 .footer__social-icon {
@@ -347,6 +350,5 @@
   height: 16px;
   width: 16px;
 }
-
 
 /*Закончил блок footer*/
