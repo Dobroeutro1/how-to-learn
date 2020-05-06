@@ -1,0 +1,12 @@
+.footer__column-links {
+  padding: 0;
+}
+
+.footer__column-links:first-of-type {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.footer__column-links:last-of-type {
+  margin-bottom: 16px;
+}
